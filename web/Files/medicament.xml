@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <!--
+    - Base de données :  'gsb'
+    -->
+    <database name="gsb">
+        <!-- Table medicament -->
+        <table name="medicament" action="updated">
+            <column name="MED_DEPOTLEGAL">3MYC7</column>
+            <column name="MED_NOMCOMMERCIAL">TRIMYCINE</column>
+            <column name="FAM_CODE">CRT</column>
+            <column name="MED_COMPOSITION">Triamcinolone (acétonide) + Néomycine + Nystatine</column>
+            <column name="MED_EFFETS">Ce médicament est un corticoïde à  activité forte ou très forte associé à  un antibiotique et un antifongique, utilisé en application locale dans certaines atteintes cutanées surinfectées.</column>
+            <column name="MED_CONTREINDIC">Ce médicament est contre-indiqué en cas d&quot;allergie à  d&quot;un des constituants, d&quot;infections de la peau ou de parasitisme non traités, d&quot;acné. Ne pas appliquer sur une plaie, ni sous un pansement occlusif.</column>
+            <column name="MED_PRIXECHANTILLON">NULL</column>
+        </table>
+        <table name="medicament" action="inserted">
+            <column name="MED_DEPOTLEGAL">ALLERGODIL</column>
+            <column name="MED_NOMCOMMERCIAL">ALLERGODIL 0.127mg sol p pulv nasal</column>
+            <column name="FAM_CODE">AH</column>
+            <column name="MED_COMPOSITION">Azelastine chlorhydrate</column>
+            <column name="MED_EFFETS">Ce médicament est utilisé pour traiter les rhinites allergiques.</column>
+            <column name="MED_CONTREINDIC">Ce médicament est contre-indiqué en cas d&quot;allergie aux antihistaminiques.</column>
+            <column name="MED_PRIXECHANTILLON">NULL</column>
+        </table>
+        <table name="medicament" action="deleted">
+            <column name="MED_DEPOTLEGAL">AMOX45</column>
+            <column name="MED_NOMCOMMERCIAL">AMOXAR</column>
+            <column name="FAM_CODE">ABP</column>
+            <column name="MED_COMPOSITION">Amoxicilline</column>
+            <column name="MED_EFFETS">Ce médicament, plus puissant que les pénicillines simples, est utilisé pour traiter des infections bactériennes spécifiques.</column>
+            <column name="MED_CONTREINDIC">La prise de ce médicament peut rendre positifs les tests de dépistage du dopage.</column>
+            <column name="MED_PRIXECHANTILLON">NULL</column>
+        </table>
+       <table name="medicament" action="inserted">
+            <column name="MED_DEPOTLEGAL">DEFA100</column>
+            <column name="MED_NOMCOMMERCIAL">DEFANIL 100mg cp </column>
+            <column name="FAM_CODE">AIM</column>
+            <column name="MED_COMPOSITION">Amoxapine</column>
+            <column name="MED_EFFETS">Ce médicament est utilisé pour traiter les épisodes dépressifs sévères, certaines douleurs rebelles, les troubles obsessionnels compulsifs et certaines énurésies chez d&quot;enfant.</column>
+            <column name="MED_CONTREINDIC">Ce médicament est contre-indiqué en cas de glaucome ou d&quot;adénome de la prostate, d&quot;infarctus récent, ou si vous avez reà§u un traitement par IMAO durant les 2 semaines précédentes ou en cas d&quot;allergie aux antidépresseurs imipraminiques.</column>
+            <column name="MED_PRIXECHANTILLON">NULL</column>
+        </table>
+        <table name="medicament" action="updated">
+            <column name="MED_DEPOTLEGAL">DIMIRTAM6</column>
+            <column name="MED_NOMCOMMERCIAL">DIMIRTAM</column>
+            <column name="FAM_CODE">AAC</column>
+            <column name="MED_COMPOSITION">Mirtazapine</column>
+            <column name="MED_EFFETS">Ce médicament est utilisé pour traiter les épisodes dépressifs sévères.</column>
+            <column name="MED_CONTREINDIC">La prise de ce produit est contre-indiquée en cas de d&quot;allergie à  d&quot;un des constituants. Il peut entraîner une baisse de la vigilance</column>
+            <column name="MED_PRIXECHANTILLON">NULL</column>
+        </table>
+        <table name="medicament" action="updated">
+            <column name="MED_DEPOTLEGAL">INSXT5</column>
+            <column name="MED_NOMCOMMERCIAL">INSECTIL</column>
+            <column name="FAM_CODE">AH</column>
+            <column name="MED_COMPOSITION">Diphénydramine</column>
+            <column name="MED_EFFETS">Ce médicament est utilisé en application locale sur les piqûres d&quot;insecte et d&quot;urticaire.</column>
+            <column name="MED_CONTREINDIC">Ce médicament est contre-indiqué en cas d&quot;allergie aux antihistaminiques.Il ne doit pas être appliqué sur une plaie</column>
+            <column name="MED_PRIXECHANTILLON">NULL</column>
+        </table>
+        <table name="medicament" action="inserted">
+            <column name="MED_DEPOTLEGAL">POLYDEXA</column>
+            <column name="MED_NOMCOMMERCIAL">POLYDEXA sol auric</column>
+            <column name="FAM_CODE">ALO</column>
+            <column name="MED_COMPOSITION">Dexamethasone+Neomycine+Molymyxine</column>
+            <column name="MED_EFFETS">Ce médicamentest utilisé pour traiter des otites externes.</column>
+            <column name="MED_CONTREINDIC">Ce médicament est déconseillé aux enfants jusqu&quot;à l&quot;âge de 6 ans.</column>
+            <column name="MED_PRIXECHANTILLON">NULL</column>
+        </table>
+        <table name="medicament" action="inserted">
+            <column name="MED_DEPOTLEGAL">PRISTAM500</column>
+            <column name="MED_NOMCOMMERCIAL">PRISTAM 500mg cp pellic</column>
+            <column name="FAM_CODE">AFM</column>
+            <column name="MED_COMPOSITION">Pristinamycine</column>
+            <column name="MED_EFFETS">Ce médicament est utilisé pour traiter des infections bactériennes spécifiques.</column>
+            <column name="MED_CONTREINDIC">Ce médicament est contre-indiqué en cas d&quot;allergie aux macrolides (dont le chef de file est d&quot;érythromycine).</column>
+            <column name="MED_PRIXECHANTILLON">NULL</column>
+        </table>
+        <table name="medicament" action="deleted">
+            <column name="MED_DEPOTLEGAL">TROXT21</column>
+            <column name="MED_NOMCOMMERCIAL">TROXADET</column>
+            <column name="FAM_CODE">AIN</column>
+            <column name="MED_COMPOSITION">Paroxétine</column>
+            <column name="MED_EFFETS">Ce médicament est utilisé pour traiter la dépression et les troubles obsessionnels compulsifs. Il peut également être utilisé en prévention des crises de panique avec ou sans agoraphobie.</column>
+            <column name="MED_CONTREINDIC">Ce médicament est contre-indiqué en cas d&quot;allergie au produit.</column>
+            <column name="MED_PRIXECHANTILLON">NULL</column>
+        </table>
+        <table name="medicament" action="updated">
+            <column name="MED_DEPOTLEGAL">URIEG6</column>
+            <column name="MED_NOMCOMMERCIAL">URIREGUL</column>
+            <column name="FAM_CODE">AUM</column>
+            <column name="MED_COMPOSITION">Fosfomycine trométamol</column>
+            <column name="MED_EFFETS">Ce médicament est utilisé pour traiter les infections urinaires simples chez la femme de moins de 55 ans.</column>
+            <column name="MED_CONTREINDIC">La prise de ce médicament est contre-indiquée en cas d&quot;allergie à  d&quot;un des constituants et d&quot;insuffisance rénale.</column>
+            <column name="MED_PRIXECHANTILLON">NULL</column>
+        </table>
+    </database>
