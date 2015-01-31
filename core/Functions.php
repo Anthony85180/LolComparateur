@@ -1,49 +1,89 @@
 <?php
 
-     function getIdPlayer()
-    {	
-		$c = curl_init();
-		curl_setopt($c, CURLOPT_URL, "$location.api.pvp.net/api/lol/$location/v1.4/summoner/by-name/$pseudo?api_key=$riotkey");
-		curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
-		curl_setopt($c, CURLOPT_HEADER, false);
-		$output = curl_exec($c);
-		if($output === false)
-		{
-			trigger_error('Erreur curl : '.curl_error($c),E_USER_WARNING);
-		}
-
-		else
-		{
-			$result = json_decode($output, true);
-			//~ var_dump($result);
-			$id =$result[$pseudo]["id"];
-			return $id;
-		}
-
-		curl_close($c);
+     function getPlayerId(){	
 		
-    }
+			global $riotkey;
+			global $pseudo;
+			global $location;
+			
+			$c = curl_init();
+			curl_setopt($c, CURLOPT_URL, "$location.api.pvp.net/api/lol/$location/v1.4/summoner/by-name/$pseudo?api_key=$riotkey");
+			curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
+			curl_setopt($c, CURLOPT_HEADER, false);
+			$output = curl_exec($c);
+			if($output === false)
+			{
+				trigger_error('Erreur curl : '.curl_error($c),E_USER_WARNING);
+			}
 
-   //~ global $medDepot;
-		//~ global $nomCommerce;
-		//~ global $famCode;
-		//~ global $medCompo;
-		//~ global $medEffet;
-		//~ global $medContreInd ;
-		//~ global $medPrixEchan;
+			else
+			{
+				$result = json_decode($output, true);
+				//~ var_dump($result);
+				$playerId =$result[$pseudo]["id"];
+				return $playerId;
+			}
+
+			curl_close($c);
+		
+		}
+    
+    
+       function getPlayerLeagueInfo($id) {	
+		
+			global $riotkey;
+			
+			$c = curl_init();
+			curl_setopt($c, CURLOPT_URL, "euw.api.pvp.net/api/lol/euw/v2.5/league/by-summoner/$id?api_key=$riotkey");
+			curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
+			curl_setopt($c, CURLOPT_HEADER, false);
+			$output = curl_exec($c);
+
+			if($output === false)
+			{
+				trigger_error('Erreur curl : '.curl_error($c),E_USER_WARNING);
+			}
+
+			else
+			{	
+				//~ var_dump($output2);
+				$result = json_decode($output, true);
+				$playerLeagueInfo = $result[$id][0];
+			}
+		
+			
+			
+			return $playerLeagueInfo;
+	}
+	
+    
+      function 	getPlayerRankedInfo($id){	
+			
+			global $riotkey;
+			
+			$playerLeagueInfo = getPlayerLeagueInfo($id);
+			
+
+			foreach ($playerLeagueInfo["entries"] as $entry )
+			{
+				if ($entry['playerOrTeamId'] == $id){
+
+					$playerRankedInfo = $entry;
+				}
+			}
+			
+			return $playerRankedInfo;
+	}
+   
+   
+   
+    
+    
+    //~ 
+      //~ function xxx()
+    //~ {	
 		//~ 
-		//~ $listecolumntable = $table->getElementsByTagName('column');
-		//~ foreach($listecolumntable as $column){
-			//~ $text =$column->firstChild->nodeValue;
-			//~ $attrib =$column->getAttribute("name");
-			//~ $tab[$attrib] = $text; 
-		//~ }
-		//~ $medDepot = $tab['MED_DEPOTLEGAL'];
-		//~ $nomCommerce = $tab['MED_NOMCOMMERCIAL'];
-		//~ $famCode = $tab['FAM_CODE'];
-		//~ $medCompo = $tab['MED_COMPOSITION'];
-		//~ $medEffet = $tab['MED_EFFETS'];
-		//~ $medContreInd = $tab['MED_CONTREINDIC'];
-		//~ $medPrixEchan = $tab['MED_PRIXECHANTILLON'];
+		//~ 
+	//~ }
 
 ?>
