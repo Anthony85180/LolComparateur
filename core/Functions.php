@@ -1,10 +1,9 @@
 <?php
 
-     function getPlayerId(){	
+     function getPlayerId($pseudo,$location){	
 		
 			global $riotkey;
-			global $pseudo;
-			global $location;
+			
 			
 			$c = curl_init();
 			curl_setopt($c, CURLOPT_URL, "$location.api.pvp.net/api/lol/$location/v1.4/summoner/by-name/$pseudo?api_key=$riotkey");
