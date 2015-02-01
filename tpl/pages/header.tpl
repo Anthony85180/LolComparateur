@@ -21,7 +21,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.php">League Of Legenthony</a>
+                    <a class="navbar-brand" href="index.php"> <b>League Of Legenthony</b> - Am I better than Soléano ?</a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-collapse-target">
                 </div>

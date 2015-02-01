@@ -39,6 +39,12 @@
 							<td data-title="Valeur alphanumérique">{$player1Ratio}</td>
 						</tr>
 					
+						<td colspan="2">Parties normales</td>
+						<tr>
+							<td data-title="Droit">Victoires</td>
+							<td data-title="Valeur alphanumérique">{$player1NormWin}</td>
+						</tr>
+					
 						</tbody>
 						</table>
 				
@@ -77,6 +83,13 @@
 						<tr>
 							<td data-title="Droit"><B>Ratio</b></td>
 							<td data-title="Valeur alphanumérique">{$player2Ratio}</td>
+						</tr>
+					
+					
+						<td colspan="2">Parties normales</td>
+						<tr>
+							<td data-title="Droit">Victoires</td>
+							<td data-title="Valeur alphanumérique">{$player2NormWin}</td>
 						</tr>
 					
 						</tbody>

@@ -1,25 +1,25 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-02-01 17:33:37
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-02-01 18:44:45
          compiled from "tpl\pages\header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:1853854ce4015d9bd65-88962420%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2775954ce660d68d619-90413471%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '493d8316aef4a06dae9811907a634c008cbf2c53' => 
     array (
       0 => 'tpl\\pages\\header.tpl',
-      1 => 1422808388,
+      1 => 1422811401,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '1853854ce4015d9bd65-88962420',
+  'nocache_hash' => '2775954ce660d68d619-90413471',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_54ce4015da02b6_62301481',
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_54ce660d691417_06528861',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54ce4015da02b6_62301481')) {function content_54ce4015da02b6_62301481($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_54ce660d691417_06528861')) {function content_54ce660d691417_06528861($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="fr">
 <head>
         <title>Legenthony</title>
@@ -48,7 +48,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.php">League Of Legenthony</a>
+                    <a class="navbar-brand" href="index.php"> <b>League Of Legenthony</b> - Am I better than Soléano ?</a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-collapse-target">
                 </div>

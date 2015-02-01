@@ -1,22 +1,22 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-02-01 18:12:11
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-02-01 19:37:19
          compiled from ".\tpl\pages\home.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:357654ce40192707b9-37792454%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2202154ce661146aa71-15355536%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '808450459631af9a759187a12723d845d37f4207' => 
     array (
       0 => '.\\tpl\\pages\\home.tpl',
-      1 => 1422810721,
+      1 => 1422815817,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '357654ce40192707b9-37792454',
+  'nocache_hash' => '2202154ce661146aa71-15355536',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_54ce40192c5959_24193562',
+  'unifunc' => 'content_54ce6611525ed2_98482530',
   'variables' => 
   array (
     'player1Name' => 0,
@@ -24,15 +24,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'player1Win' => 0,
     'player1Loose' => 0,
     'player1Ratio' => 0,
+    'player1NormWin' => 0,
     'player2Name' => 0,
     'player2Division' => 0,
     'player2Win' => 0,
     'player2Loose' => 0,
     'player2Ratio' => 0,
+    'player2NormWin' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54ce40192c5959_24193562')) {function content_54ce40192c5959_24193562($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ('tpl/pages/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+<?php if ($_valid && !is_callable('content_54ce6611525ed2_98482530')) {function content_54ce6611525ed2_98482530($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ('tpl/pages/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
 
 
@@ -79,6 +81,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 </td>
 						</tr>
 					
+						<td colspan="2">Parties normales</td>
+						<tr>
+							<td data-title="Droit">Victoires</td>
+							<td data-title="Valeur alphanumérique"><?php echo $_smarty_tpl->tpl_vars['player1NormWin']->value;?>
+</td>
+						</tr>
+					
 						</tbody>
 						</table>
 				
@@ -121,6 +130,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						<tr>
 							<td data-title="Droit"><B>Ratio</b></td>
 							<td data-title="Valeur alphanumérique"><?php echo $_smarty_tpl->tpl_vars['player2Ratio']->value;?>
+</td>
+						</tr>
+					
+					
+						<td colspan="2">Parties normales</td>
+						<tr>
+							<td data-title="Droit">Victoires</td>
+							<td data-title="Valeur alphanumérique"><?php echo $_smarty_tpl->tpl_vars['player2NormWin']->value;?>
 </td>
 						</tr>
 					
