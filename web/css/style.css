@@ -7,3 +7,77 @@ body {
     padding-top: 10px;
     text-align: center;
 }
+
+.search-box{
+
+box-shadow : 0px 0px 15px 1px #000;
+border-radius : 4px;
+background:none repeat scroll 0% 0% rgba(255, 255, 255, 0.5);
+padding:20px 20px 10px;
+border :1px solid rgba(0, 0, 0, 0.05);
+width:650px;
+position:absolute;
+left:600px;
+
+TOP:400px;
+
+}
+
+.search{
+
+width : 90%;
+
+}
+
+.submit{margin-left:250px}
+
+
+#principal{margin-top:5%;}
+.player1{
+text-align:center;
+ border-width:1px 2px 3px 2px;
+ border-style:solid;
+ border-color:grey;
+background-color :white;
+height:90%;
+}
+
+.player2{
+text-align:center;
+ border-width:1px 2px 3px 0px;
+ border-style:solid;
+ border-color:grey;
+background-color :white;
+height:90%;
+}
+
+.responsive-table-line{margin-top:30%;}
+
+
+.responsive-table-line thead tr {
+	
+}
+	
+.responsive-table-line td {
+	position: relative;
+	border: 0px solid transparent;
+	white-space: normal;
+	text-align:center;
+}
+	
+.responsive-table-line td:before {
+	position: absolute;
+	top: px;
+	left: 0px;
+	width: 45%;
+	padding-right: 15px;
+	height:100%;
+	white-space: nowrap;
+	text-overflow: ellipsis !important;
+	overflow:hidden !important;
+	text-align:left;
+	background-color:#f8f8f8;
+	padding:2px;
+}
+
+

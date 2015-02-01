@@ -80,8 +80,7 @@
     
     
     //~ 
-      //~ function xxx()
-    //~ {	
+      //~ function xxx(){	
 		//~ 
 		//~ 
 	//~ }

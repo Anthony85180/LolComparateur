@@ -14,10 +14,14 @@ $tier = $leagueInfoPlayer["tier"];
 $div = $rankedInfoPlayer["division"];
 $loose = $rankedInfoPlayer["losses"];
 $win =$rankedInfoPlayer["wins"];
+$ratio = ($win/$loose);
 
+$smarty->assign('playerName',$pseudo);
+$smarty->assign('playerDivision', $tier.$div);
+$smarty->assign('playerWin', $win);
+$smarty->assign('playerLoose', $loose);
+$smarty->assign('playerRatio', $ratio);
 
-
-echo ("Je suis ".$pseudo." le ".$tier." ".$div." qui a gagnié ".$win." ranked pour SEULEMENT ".$loose." looses");
 
 ?>
 
