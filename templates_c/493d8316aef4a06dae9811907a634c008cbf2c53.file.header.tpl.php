@@ -1,25 +1,25 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-02-01 18:44:45
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-02-03 22:22:57
          compiled from "tpl\pages\header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2775954ce660d68d619-90413471%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:4354d11a3ab88704-12887039%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '493d8316aef4a06dae9811907a634c008cbf2c53' => 
     array (
       0 => 'tpl\\pages\\header.tpl',
-      1 => 1422811401,
+      1 => 1422998571,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2775954ce660d68d619-90413471',
+  'nocache_hash' => '4354d11a3ab88704-12887039',
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_54ce660d691417_06528861',
+  'unifunc' => 'content_54d11a3ab8c8f5_56469403',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54ce660d691417_06528861')) {function content_54ce660d691417_06528861($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_54d11a3ab8c8f5_56469403')) {function content_54d11a3ab8c8f5_56469403($_smarty_tpl) {?><!DOCTYPE html>
 <html lang="fr">
 <head>
         <title>Legenthony</title>
@@ -48,7 +48,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.php"> <b>League Of Legenthony</b> - Am I better than Soléano ?</a>
+                    <a class="navbar-brand" href="index.php"> <b>League Of Legend</b> - Comparateur de performances</a>
                 </div>
                 <div class="collapse navbar-collapse" id="navbar-collapse-target">
                 </div>

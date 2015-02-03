@@ -10,21 +10,30 @@
 			curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
 			curl_setopt($c, CURLOPT_HEADER, false);
 			$output = curl_exec($c);
-			if($output === false)
-			{
-				trigger_error('Erreur curl : '.curl_error($c),E_USER_WARNING);
-			}
+			$httpCode = curl_getinfo($c, CURLINFO_HTTP_CODE); 
+			
+			if($httpCode != '404'){
+				
+				if($output === false)
+				{
+					trigger_error('Erreur curl : '.curl_error($c),E_USER_WARNING);
+				}
 
-			else
-			{
-				$result = json_decode($output, true);
-				//~ var_dump($result);
-				$playerId =$result[$pseudo]["id"];
-				return $playerId;
-			}
+				else
+				{
+					$result = json_decode($output, true);
+					if ($result !=''){
+					@$playerId =$result[$pseudo]["id"];
+					return $playerId;}
+				
+				}
 
-			curl_close($c);
-		
+				curl_close($c);
+			
+				}else{
+					return null;
+				}	
+			
 		}
     
     
@@ -37,22 +46,26 @@
 			curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
 			curl_setopt($c, CURLOPT_HEADER, false);
 			$output = curl_exec($c);
-
-			if($output === false)
-			{
-				trigger_error('Erreur curl : '.curl_error($c),E_USER_WARNING);
-			}
-
-			else
-			{	
-				$result = json_decode($output, true);
-				$playerLeagueInfo = $result[$id][0];
-			}
+			$httpCode = curl_getinfo($c, CURLINFO_HTTP_CODE); 
 		
+			if($httpCode != '404'){
 			
+				if($output === false)
+				{
+					trigger_error('Erreur curl : '.curl_error($c),E_USER_WARNING);
+				}
+
+				else
+				{	
+					$result = json_decode($output, true);
+					$playerLeagueInfo = $result[$id][0];
+				}
+				return $playerLeagueInfo;
 			
-			return $playerLeagueInfo;
-	}
+			}else{
+				return false;
+			}		
+		}
 	
     
       function 	getPlayerRankedInfo($id){	
@@ -61,17 +74,23 @@
 			
 			$playerLeagueInfo = getPlayerLeagueInfo($id);
 			
-
-			foreach ($playerLeagueInfo["entries"] as $entry )
-			{
-				if ($entry['playerOrTeamId'] == $id){
-
-					$playerRankedInfo = $entry;
-				}
-			}
 			
-			return $playerRankedInfo;
-	}
+			if($playerLeagueInfo != false){
+
+				foreach ($playerLeagueInfo["entries"] as $entry )
+				{
+					if ($entry['playerOrTeamId'] == $id){
+
+						$playerRankedInfo = $entry;
+					}
+				}
+				
+				return $playerRankedInfo;
+			
+			}else{
+				return false;
+			}
+		}
    
 
    
@@ -84,21 +103,26 @@
 			curl_setopt($c, CURLOPT_RETURNTRANSFER, true);
 			curl_setopt($c, CURLOPT_HEADER, false);
 			$output = curl_exec($c);
+			$httpCode = curl_getinfo($c, CURLINFO_HTTP_CODE); 
+			
+			
+			if($httpCode != '404'){
+				if($output === false)
+				{
+					trigger_error('Erreur curl : '.curl_error($c),E_USER_WARNING);
+				}
 
-			if($output === false)
-			{
-				trigger_error('Erreur curl : '.curl_error($c),E_USER_WARNING);
-			}
-
-			else
-			{	
-				//~ var_dump($output);
-				$result = json_decode($output, true);
-				$playerStat = $result['playerStatSummaries'];
-			}
-			var_dump($playerStat);
-			exit;
-			return $playerStat;
-	}
+				else
+				{	
+					$result = json_decode($output, true);
+					@$playerStat = $result['playerStatSummaries'][8];
+				}
+				
+				return $playerStat;
+			
+			}else{
+				return false;
+			}	
+		}
 
 ?>

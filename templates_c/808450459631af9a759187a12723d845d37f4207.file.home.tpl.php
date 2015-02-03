@@ -1,22 +1,22 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-02-01 19:37:19
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-02-03 21:06:11
          compiled from ".\tpl\pages\home.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2202154ce661146aa71-15355536%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1241054d11a3aa71ed9-61833814%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '808450459631af9a759187a12723d845d37f4207' => 
     array (
       0 => '.\\tpl\\pages\\home.tpl',
-      1 => 1422815817,
+      1 => 1422993963,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2202154ce661146aa71-15355536',
+  'nocache_hash' => '1241054d11a3aa71ed9-61833814',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_54ce6611525ed2_98482530',
+  'unifunc' => 'content_54d11a3ab70609_53575879',
   'variables' => 
   array (
     'player1Name' => 0,
@@ -34,7 +34,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54ce6611525ed2_98482530')) {function content_54ce6611525ed2_98482530($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ('tpl/pages/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
+<?php if ($_valid && !is_callable('content_54d11a3ab70609_53575879')) {function content_54d11a3ab70609_53575879($_smarty_tpl) {?><?php echo $_smarty_tpl->getSubTemplate ('tpl/pages/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>
 
 
 
@@ -46,7 +46,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <div class="col-md-6 brd player1">
             <div class="center-block">
             
-					<b><?php echo $_smarty_tpl->tpl_vars['player1Name']->value;?>
+					<b><?php echo (($tmp = @$_smarty_tpl->tpl_vars['player1Name']->value)===null||$tmp==='' ? 'Joueur inéxistant' : $tmp);?>
 </b>
             
             
@@ -61,30 +61,30 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						<tbody>
 						<tr>
 							<td data-title="Droit">Division</td>
-							<td data-title="Valeur alphanumérique"><?php echo $_smarty_tpl->tpl_vars['player1Division']->value;?>
+							<td data-title="Valeur alphanumérique"><?php echo (($tmp = @$_smarty_tpl->tpl_vars['player1Division']->value)===null||$tmp==='' ? "Pas d'informations" : $tmp);?>
 </td>
 						</tr>
 						<tr>
 							<td data-title="Droit">Victoires</td>
-							<td data-title="Valeur alphanumérique"><?php echo $_smarty_tpl->tpl_vars['player1Win']->value;?>
+							<td data-title="Valeur alphanumérique"><?php echo (($tmp = @$_smarty_tpl->tpl_vars['player1Win']->value)===null||$tmp==='' ? "Pas d'informations" : $tmp);?>
 </td>
 						</tr>
 						<tr>
 							<td data-title="Droit">Défaites</td>
-							<td data-title="Valeur alphanumérique"><?php echo $_smarty_tpl->tpl_vars['player1Loose']->value;?>
+							<td data-title="Valeur alphanumérique"><?php echo (($tmp = @$_smarty_tpl->tpl_vars['player1Loose']->value)===null||$tmp==='' ? "Pas d'informations" : $tmp);?>
 </td>
 						</tr>
 						
 						<tr>
 							<td data-title="Droit"><B>Ratio</b></td>
-							<td data-title="Valeur alphanumérique"><?php echo $_smarty_tpl->tpl_vars['player1Ratio']->value;?>
+							<td data-title="Valeur alphanumérique"><?php echo (($tmp = @$_smarty_tpl->tpl_vars['player1Ratio']->value)===null||$tmp==='' ? "Pas d'informations" : $tmp);?>
 </td>
 						</tr>
 					
 						<td colspan="2">Parties normales</td>
 						<tr>
 							<td data-title="Droit">Victoires</td>
-							<td data-title="Valeur alphanumérique"><?php echo $_smarty_tpl->tpl_vars['player1NormWin']->value;?>
+							<td data-title="Valeur alphanumérique"><?php echo (($tmp = @$_smarty_tpl->tpl_vars['player1NormWin']->value)===null||$tmp==='' ? "Pas d'informations" : $tmp);?>
 </td>
 						</tr>
 					
@@ -98,7 +98,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <div class="col-md-6 brd player2">
             <div class="center-block">
             
-            <b><?php echo $_smarty_tpl->tpl_vars['player2Name']->value;?>
+            <b><?php echo (($tmp = @$_smarty_tpl->tpl_vars['player2Name']->value)===null||$tmp==='' ? 'Joueur inéxistant' : $tmp);?>
 </b>
             
             
@@ -113,23 +113,23 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						<tbody>
 						<tr>
 							<td data-title="Droit">Division</td>
-							<td data-title="Valeur alphanumérique"><?php echo $_smarty_tpl->tpl_vars['player2Division']->value;?>
+							<td data-title="Valeur alphanumérique"><?php echo (($tmp = @$_smarty_tpl->tpl_vars['player2Division']->value)===null||$tmp==='' ? "Pas d'informations" : $tmp);?>
 </td>
 						</tr>
 						<tr>
 							<td data-title="Droit">Victoires</td>
-							<td data-title="Valeur alphanumérique"><?php echo $_smarty_tpl->tpl_vars['player2Win']->value;?>
+							<td data-title="Valeur alphanumérique"><?php echo (($tmp = @$_smarty_tpl->tpl_vars['player2Win']->value)===null||$tmp==='' ? "Pas d'informations" : $tmp);?>
 </td>
 						</tr>
 						<tr>
 							<td data-title="Droit">Défaites</td>
-							<td data-title="Valeur alphanumérique"><?php echo $_smarty_tpl->tpl_vars['player2Loose']->value;?>
+							<td data-title="Valeur alphanumérique"><?php echo (($tmp = @$_smarty_tpl->tpl_vars['player2Loose']->value)===null||$tmp==='' ? "Pas d'informations" : $tmp);?>
 </td>
 						</tr>
 						
 						<tr>
 							<td data-title="Droit"><B>Ratio</b></td>
-							<td data-title="Valeur alphanumérique"><?php echo $_smarty_tpl->tpl_vars['player2Ratio']->value;?>
+							<td data-title="Valeur alphanumérique"><?php echo (($tmp = @$_smarty_tpl->tpl_vars['player2Ratio']->value)===null||$tmp==='' ? "Pas d'informations" : $tmp);?>
 </td>
 						</tr>
 					
@@ -137,7 +137,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						<td colspan="2">Parties normales</td>
 						<tr>
 							<td data-title="Droit">Victoires</td>
-							<td data-title="Valeur alphanumérique"><?php echo $_smarty_tpl->tpl_vars['player2NormWin']->value;?>
+							<td data-title="Valeur alphanumérique"><?php echo (($tmp = @$_smarty_tpl->tpl_vars['player2NormWin']->value)===null||$tmp==='' ? "Pas d'informations" : $tmp);?>
 </td>
 						</tr>
 					

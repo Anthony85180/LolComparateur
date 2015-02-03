@@ -5,12 +5,17 @@
 <p>
 	<div class="search-box">
 		
-			<input type="text" name="pseudo" class="search"/>
+		<input type="text"placeholder="Joueur 1" name="pseudo1" class="search" required/>
 		
-		<select name="serveur">;
+		<select name="serveur1">;
 		<option value ="euw">EU</option>
-		<option value ="euw">NA</option>
 		
+		
+		<input type="text" placeholder="Joueur 2"name="pseudo2" class="search" required/>
+		
+		<select name="serveur2">;
+		<option value ="euw">EU</option>
+			
 		<input type="submit" value="Valider" class ="submit" />
 		</div>
 	
